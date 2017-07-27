@@ -22,4 +22,9 @@ public class BaseXController {
         model.addAllAttributes(params);
         return view;
     }
+
+    @GetMapping("/favicon")
+    public String favicon() throws Exception {
+        throw new ResourceNotFoundException();
+    }
 }
