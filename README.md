@@ -2,13 +2,15 @@
 
 An experiment with using XQuery for view rendering in [Spring Boot](http://projects.spring.io/spring-boot/) web application. The XQuery processor is provided by [BaseX](http://basex.org/) running in embedded mode.
 
+Only the default view resolver was replaced. All other Spring Boot features still applies normally. 
+
 ## Dependencies
 
 > With the exception of Java 8, the dependencies are handled by the Gradle wrapper in the project.
 
 * [Java 8](http://www.oracle.com/technetwork/java/index.html)
 * [Gradle](https://gradle.org/) 4.0.2 (for build)
-* [Spring Boot](http://projects.spring.io/spring-boot/) 1.5.5
+* [Spring Boot](http://projects.spring.io/spring-boot/) 1.5.6
 * [BaseX](http://basex.org/) 8.6.4
 * [Saxon](http://www.saxonica.com/) 9.8.0
 
