@@ -16,7 +16,7 @@ element html {
                 element li {$n}
         },
         element p {
-            xslt:transform(<test>{$message}</test>, 'views/test.xsl') (: The URL path is relative to application root :)
+            xslt:transform(<test>{$message}</test>, 'views/test.xsl')/result/text() (: The URL path is relative to application root :)
         }
     }
 }
