@@ -25,7 +25,7 @@ repositories {
 
 dependencies {
 	compile 'net.sf.saxon:Saxon-HE:9.8.0-3'
-    compile 'org.basex:basex:8.6.4'
+    compile 'org.basex:basex:8.6.5'
 	compile 'org.springframework.boot:spring-boot-starter-web'
 	testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
