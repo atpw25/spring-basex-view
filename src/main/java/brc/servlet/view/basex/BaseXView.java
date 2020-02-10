@@ -1,5 +1,13 @@
 package brc.servlet.view.basex;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.Map;
+
+import javax.annotation.PreDestroy;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.basex.core.Context;
 import org.basex.io.serial.SerialMethod;
 import org.basex.io.serial.Serializer;
@@ -13,13 +21,6 @@ import org.springframework.http.MediaType;
 import org.springframework.util.Assert;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.servlet.view.AbstractUrlBasedView;
-
-import javax.annotation.PreDestroy;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.Map;
 
 public class BaseXView extends AbstractUrlBasedView {
     private Context context;
@@ -93,7 +94,7 @@ public class BaseXView extends AbstractUrlBasedView {
             case JSON:
                 return MediaType.APPLICATION_JSON;
             default:
-                return MediaType.TEXT_PLAIN;
+                return MediaType.APPLICATION_XML;
         }
     }
 
