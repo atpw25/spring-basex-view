@@ -4,6 +4,7 @@ module namespace lib = "lib";
 
 import module namespace lib2 = 'lib2';
 
-declare function lib:test($m as xs:string?) as xs:string {
-    'Hello lib ' || lib2:test2($m)
+declare function lib:test($message as xs:string?) {
+    element p {'Hello ' || $message || ' from lib'}, 
+    lib2:test2($message)
 };
