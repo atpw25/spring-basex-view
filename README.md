@@ -9,10 +9,10 @@ Only the default view resolver was replaced. All other Spring Boot features stil
 > With the exception of Java 8, the dependencies are handled by the Gradle wrapper in the project.
 
 * [Java 8](http://www.oracle.com/technetwork/java/index.html)
-* [Gradle](https://gradle.org/) 4.0.2 (for build)
-* [Spring Boot](http://projects.spring.io/spring-boot/) 1.5.6
-* [BaseX](http://basex.org/) 8.6.5
-* [Saxon](http://www.saxonica.com/) 9.8.0
+* [Gradle](https://gradle.org/) 6.1.1 (for build)
+* [Spring Boot](http://projects.spring.io/spring-boot/) 2.2.4
+* [BaseX](http://basex.org/) 9.3.1
+* [Saxon](http://www.saxonica.com/) 9.9.1
 
 ## Running the Application
 
@@ -20,11 +20,11 @@ Only the default view resolver was replaced. All other Spring Boot features stil
 
 * **Port**: `8080`
 * **View files location**: `{APPLICATION FOLDER}/view/`
-* **URL paths**: URL paths are relative to the application folder (although not fully tested)
+* **URL paths**: URL paths are relative to the application folder (not fully tested)
 
 ### Run the Project In-Place
 
-You can execute `./gradlew bootRun` to run the application in-place.
+Execute `./gradlew bootRun` to run the application in-place.
 
 ### Building the Project
 
